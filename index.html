@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel=stylesheet type="text/css" href="main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <script src="scriptmain.js" language="javascript" type="text/javascript"></script>
     
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -12,7 +14,7 @@
     <style>
       .attribution { font-size: 11px; text-align: center; }
       .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
+    </style>  
   </head>
   <body>
     <section class="headerSection">
@@ -21,13 +23,14 @@
           <img class="logo" src="./images/logo.svg" alt="logo">
           <div class="navbar-container">
               <ul class="navbar1">
-                  <li><a href="#" class="navbar-item">Features</a></li>
-                  <li><a href="#" class="navbar-item">Pricing</a></li>
-                  <li><a href="#" class="navbar-item">Resources</a></li>
+                  <li><a href="#" class="navbar-item hide">Features</a></li>
+                  <li><a href="#" class="navbar-item hide">Pricing</a></li>
+                  <li><a href="#" class="navbar-item hide">Resources</a></li>
               </ul>
+              <hr>
               <ul class="navbar2">
-                  <li><a href="#" class="navbar-item">Login</a></li>
-                  <li><a href="#" class="loginButton"> Sign Up </a></li>
+                  <li><a href="#" class="navbar-item hide">Login</a></li>
+                  <li><a href="#" class="navbar-item hide"> Sign Up </a></li>
               </ul>
           </div>
       </nav>
@@ -52,57 +55,63 @@
 
         <p>Track how your links are performing across the web with our 
       advanced statistics dashboard.</p>
+
+      <section class="statisticsSection">
+        <div>
+          <img src="images/icon-brand-recognition.svg">
+          <h3>Brand Recognition</h3>
+          <p>Boost your brand recognition with each click. Generic links don't 
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+        <div>
+          <img src="images/icon-detailed-records.svg">
+          <h3>Detailed Records</h3>
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+        </div>
+        <div>
+          <img src="images/icon-fully-customizable.svg">
+          <h3>Fully Customizable</h3>
+          <p>Improve brand awareness and content discoverability through 
+            customizable links, supercharging audience engagement.</p>
+        </div>
+      </section>
+      
     </section>
 
-    <section class="statisticsSection">
-      <div>
-        <img src="images/icon-brand-recognition.svg">
-        <h3>Brand Recognition</h3>
-        <p>Boost your brand recognition with each click. Generic links don't 
-          mean a thing. Branded links help instil confidence in your content.</p>
-      </div>
-      <div>
-        <img src="images/icon-detailed-records.svg">
-        <h3>Detailed Records</h3>
-        <p>Gain insights into who is clicking your links. Knowing when and where 
-          people engage with your content helps inform better decisions.</p>
-      </div>
-      <div>
-        <img src="images/icon-fully-customizable.svg">
-        <h3>Fully Customizable</h3>
-        <p>Improve brand awareness and content discoverability through 
-          customizable links, supercharging audience engagement.</p>
-      </div>
-    </section>
+    
     
     <section class="section3">
-      Boost your links today
+      <h2>Boost your links today</h2>
       <button class="start">Get Started</button>
     </section>
 
     <section class="footerSection">
-      Features
+        <img src="./images/logowhite.svg" alt=''>
+        <ul>
+            <li><strong> Features </strong></li>
+            <li><a href="#"> Link Shortening </a></li>
+            <li><a href="#"> Branded Links </a></li>
+            <li><a href="#"> Analytics </a></li>
+        </ul>
+        <ul>
+            <li><strong> Resources </strong></li>
+            <li><a href="#"> Blog </a></li>
+            <li><a href="#"> Developers </a></li>
+            <li><a href="#"> Support </a></li>
+        </ul>
+        <ul>
+            <li><strong> Company </strong></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Our Team </a></li>
+            <li><a href="#"> Careers </a></li>
+            <li><a href="#"> Contact </a></li>
+        </ul>
 
-      Link Shortening
-      Branded Links
-      Analytics
-
-      Resources
-
-      Blog
-      Developers
-      Support
-
-      Company
-
-      About
-      Our Team
-      Careers
-      Contact 
-      <img src="images/icon-facebook.svg">
-      <img src="images/icon-twitter.svg">
-      <img src="images/icon-pinterest.svg">
-      <img src="images/icon-instagram.svg">
+        <img src="images/icon-facebook.svg">
+        <img src="images/icon-twitter.svg">
+        <img src="images/icon-pinterest.svg">
+        <img src="images/icon-instagram.svg">
     </section>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
