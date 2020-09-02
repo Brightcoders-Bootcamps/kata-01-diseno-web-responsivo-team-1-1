@@ -1,0 +1,155 @@
+body {
+    font-size: 18px;
+}
+.headerSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.navbar-container a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: -15px;
+}
+
+.navButton{
+    background-color: #FFF;
+    border: 0px;
+    font-weight: bold;
+    font-size: 29px;
+    color: gray;
+    float: right;
+}
+
+.navbar1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar1 li{
+    margin: 8px 0px 2px 0px;
+}
+
+.navbar2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar2 li{
+    margin: 8px 0px 2px 0px;
+}
+
+hr{
+    background-color:white;
+    width:80%;
+}
+
+.navbar2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar2 li{
+    margin: 8px 0px 2px 0px;
+}
+
+.hide{
+    display: none;
+}
+
+.footerSection {
+    background-color: hsl(260, 8%, 14%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+}
+
+    .footerSection ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+.footerSection li{
+    margin-top: 10px
+}
+
+.footerSection a{
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+}
+
+.section1, .section3 {
+    text-align: center;
+    margin: 10% 0;
+}
+.section2 {
+    background-color: hsl(0, 3%, 93%);
+    text-align: center;
+}
+.statisticsSection>div{
+    background-color: hsl(0, 0%, 100%);
+    margin: 25% 7%;
+    text-align:center;
+    padding: 5%;
+}
+.start {
+    background-color: hsl(180, 66%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 4% 10%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 67px 67px 67px 67px;
+    -moz-border-radius: 67px 67px 67px 67px;
+    -webkit-border-radius: 67px 67px 67px 67px;
+    border: 0px solid #000000;
+}
+.shorterSection {
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+    margin: 5%;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+}
+.shorter{
+    color: hsl(0, 3%, 69%);
+    padding: 4% 10%;
+    margin: 7% 7% 0% 7%;
+    width: 60%;
+    font-size: 18px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #ffffff;
+}
+.shortButton {
+    background-color: hsl(180, 66%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 4% 10%;
+    margin: 7%;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #000000;
+}
