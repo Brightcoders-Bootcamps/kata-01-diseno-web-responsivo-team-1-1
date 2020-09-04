@@ -1,11 +1,22 @@
 function deploying(){
-    var anchor = document.getElementsByClassName("navbar-item");
     var anchor = document.getElementsByClassName("navbar-container");
 
-    for(var i = 0; i < anchor.length; i++){ //vector con la cantidad de elementos del menú
+    for(var i = 0; i < anchor.length; i++){
         console.log("funciona?");
-        anchor[i].classList.toggle("hide"); //mostrar los elementos del menú
+        anchor[i].classList.toggle("hide"); //mostrar el menú
     }
+}
 
-    //$('hide').toggle();
+function addlink(){
+    var texto = $('.shorter').val();
+    
+
+    if(texto === 'Shorter a link here...'){
+        //document.write("please add a link");
+        console.log("esto es una prueba");
+
+        document.getElementsByClassName("hide2").style.display="block";
+
+        return false;
+    }
 }

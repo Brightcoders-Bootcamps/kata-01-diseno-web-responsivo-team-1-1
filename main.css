@@ -26,7 +26,7 @@ body {
     background-color: hsl(257, 27%, 26%);
     color: white;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
 }
 .navbar-container a{
     color: white;
@@ -42,6 +42,21 @@ body {
     color: gray;
     float: right;
 }
+.signUpBtn{
+    background-color: hsl(180, 66%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 4% 35%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 67px 67px 67px 67px;
+    -moz-border-radius: 67px 67px 67px 67px;
+    -webkit-border-radius: 67px 67px 67px 67px;
+    border: 0px solid #000000;
+}
+/*.signUpBtn:hover {
+    opacity: 0.6;
+}*/
+
 .navbar1, .navbar2 {
     /*display: flex;
     flex-direction: column;*/
@@ -62,6 +77,7 @@ hr{
     background-color: hsl(260, 8%, 14%);
     color: hsl(0, 0%, 100%);
     text-align: center;
+    padding-bottom: 10%;
     /*display: flex;
     flex-direction: row;*/
 }
@@ -94,6 +110,10 @@ hr{
 }
 .section1{
     font-size: x-large;
+}
+.section1>p{
+    font-size: large;
+    margin: 0% 5% 10% 5%;
     color: hsl(0, 3%, 69%);
 }
 .section1>h1, .section2>h2, .section2>h3{
@@ -107,19 +127,9 @@ hr{
     background-color: hsl(0, 3%, 93%);
     color: hsl(0, 3%, 69%);
     text-align: center;
-    padding: 15% 0;
+    padding: 25% 0;
     margin: 0%;
-}
-
-.section2>p{
-    margin-bottom:80px;
-}
-
-.section3 {
-    background-color: hsl(257, 27%, 26%);
-    padding: 15% 0;
-    color:  hsl(0, 0%, 100%);
-    margin: 0%;
+    margin-top: 100px;
 }
 .statisticsSection>div{
     background-color: hsl(0, 0%, 100%);
@@ -129,7 +139,23 @@ hr{
     padding: 5%;
     border-radius:5px;
 }
-
+.section2>p{
+    margin-bottom:80px;
+}
+.section3 {
+    background-color: hsl(257, 27%, 26%);
+    color:  hsl(0, 0%, 100%);
+    margin: 0%;
+    height: 287px;
+}
+.boostStarted {
+    position: relative;
+    z-index: 1;
+    top:-240px;
+}
+.boostMobile>img{
+    width: 100%;
+}
 .statisticsSection>div>h3{
     color:black;
     margin-top:-58px; 
@@ -172,6 +198,10 @@ hr{
     -webkit-border-radius: 67px 67px 67px 67px;
     border: 0px solid #000000;
 }
+/*.start:hover {
+    opacity: 0.6;
+}*/
+
 .shorterSection {
     background-color: hsl(257, 27%, 26%);
     text-align: center;
@@ -179,7 +209,21 @@ hr{
     border-radius: 7px 7px 7px 7px;
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border-radius: 7px 7px 7px 7px;
+    
+    position: absolute;
 }
+
+.link_please{
+    color: hsl(0, 87%, 67%);
+    font-size:10px;
+    text-align:left;
+    margin-left:10%;
+}
+
+.hide2{
+    display:none;
+}
+
 .shorter{
     color: hsl(0, 3%, 69%);
     padding: 4% 10%;
@@ -191,6 +235,12 @@ hr{
     -webkit-border-radius: 7px 7px 7px 7px;
     border: 0px solid #ffffff;
 }
+
+input.shorter:required{
+    outline-color: hsl(0, 87%, 67%);
+    color: hsl(0, 87%, 67%);
+}
+
 .shortButton {
     background-color: hsl(180, 66%, 49%);
     color: hsl(0, 0%, 100%);
@@ -203,4 +253,12 @@ hr{
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border-radius: 7px 7px 7px 7px;
     border: 0px solid #000000;
+}
+/*.shortButton:hover {
+    opacity: 0.6;
+}*/
+
+.footerSocialMedia>li{
+    display: inline;
+    margin: 3%;
 }
