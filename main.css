@@ -213,6 +213,10 @@ hr{
     position: absolute;
 }
 
+input:focus {
+    color: black;
+  }
+
 .link_please{
     color: hsl(0, 87%, 67%);
     font-size:10px;
@@ -236,10 +240,10 @@ hr{
     border: 0px solid #ffffff;
 }
 
-input.shorter:required{
+/*input.shorter:required{
     outline-color: hsl(0, 87%, 67%);
     color: hsl(0, 87%, 67%);
-}
+}*/
 
 .shortButton {
     background-color: hsl(180, 66%, 49%);
@@ -261,4 +265,8 @@ input.shorter:required{
 .footerSocialMedia>li{
     display: inline;
     margin: 3%;
+}
+@media (min-width: 1440px) {
+
+
 }

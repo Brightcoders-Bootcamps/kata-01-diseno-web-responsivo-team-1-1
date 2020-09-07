@@ -29,7 +29,8 @@
           <hr>
           <ul class="navbar2">
             <li><a href="#" class="navbar-item">Login</a></li>
-            <li><a href="#" class="signUpBtn">Sign Up</a></li>
+              <li></li>
+            <li style="margin-top:10px;"><a href="#" class="signUpBtn">Sign Up</a></li>
           </ul>
         </div>
       </nav>
@@ -42,7 +43,7 @@
       <button class="start">Get Started</button>
       <section class="shorterSection">
         <!--<div class="boostMobile"><img src="images/bg-shorten-mobile.svg"></div>-->
-        <input class="shorter" type="text" value="Shorter a link here..." onfocus="if (this.value=='Shorter a link here...') this.value=''" onblur="if (this.value=='') this.value='Shorter a link here...'" required>
+        <input class="shorter" type="text" onclick="boxText()" value="Shorter a link here..." onfocus="if (this.value=='Shorter a link here...') this.value=''" onblur="if (this.value=='') this.value='Shorter a link here...'" required>
         <p class="link_please hide2">Please add a link</p>
         <button class="shortButton" onclick="addlink()">Shorten It!</button>
       </section>
@@ -103,10 +104,10 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="footerSocialMedia">
-        <li><a href="https://www.facebook.com/"><i title="Facebook" class="fab fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com/"><i title="Twitter" class="fab fa-twitter"></i></a></li>
-        <li><a href="https://www.pinterest.com/"><i title="Pinterest" class="fab fa-pinterest"></i></a></li>
-        <li><a href="https://www.instagram.com/"><i title="Instagram" class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><i title="Facebook" class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i title="Twitter" class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank"><i title="Pinterest" class="fab fa-pinterest"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i title="Instagram" class="fab fa-instagram"></i></a></li>
       </ul>
     </section>
     <div class="attribution">
