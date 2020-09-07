@@ -8,7 +8,7 @@ function deploying(){
 
 function boxText(){
     if(addlink==false){
-        console.log("funciona??");
+        console.log("funciona?");
     }
 }
 
