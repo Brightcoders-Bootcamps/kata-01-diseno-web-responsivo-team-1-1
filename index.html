@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel=stylesheet type="text/css" href="main.css">
@@ -14,7 +14,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     
-</head>
+  </head>
   <body>
     <section class="headerSection">
       <button class="navButton" onclick="deploying()">☰</button><!--Para la versión móvil-->
@@ -36,14 +36,20 @@
       </nav>
     </section>
     <section class="section1">
-      <img class="workingImg" src="images/illustration-working.svg">
-      <h1>More than just shorter links</h1>
-      <p>Build your brand's recognition and get detailed insights 
-      on how your links are performing.</p>
-      <button class="start">Get Started</button>
+        <div class="section1Img">
+			<img class="workingImg" src="images/illustration-working.svg">
+        </div>
+		<div class="section1Info">
+			<h1>More than just shorter links</h1>
+			<p>
+				Build your brand's recognition and get detailed insights
+				on how your links are performing.
+			</p>
+			<button class="start">Get Started</button>
+		</div>
       <section class="shorterSection">
         <!--<div class="boostMobile"><img src="images/bg-shorten-mobile.svg"></div>-->
-        <input class="shorter" type="text" onclick="boxText()" value="Shorter a link here..." onfocus="if (this.value=='Shorter a link here...') this.value=''" onblur="if (this.value=='') this.value='Shorter a link here...'" required>
+        <input class="shorter" type="text" value="Shorter a link here..." onfocus="if (this.value=='Shorter a link here...') this.value=''" onblur="if (this.value=='') this.value='Shorter a link here...'" required>
         <p class="link_please hide2">Please add a link</p>
         <button class="shortButton" onclick="addlink()">Shorten It!</button>
       </section>

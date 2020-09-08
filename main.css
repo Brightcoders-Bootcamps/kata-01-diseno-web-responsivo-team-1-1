@@ -267,6 +267,23 @@ input:focus {
     margin: 3%;
 }
 @media (min-width: 1440px) {
+    .statisticsSection > div {
+    width: 40px;
+}
+    .navbutton{
+        display: none;
+    }
+    
+    .hide{
+        display: block;
+    }
 
+    .section1Img {
 
+    }
+
+    .section1Info {
+
+    }
+    
 }
