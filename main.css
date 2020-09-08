@@ -258,32 +258,154 @@ input:focus {
     -webkit-border-radius: 7px 7px 7px 7px;
     border: 0px solid #000000;
 }
-/*.shortButton:hover {
-    opacity: 0.6;
-}*/
 
 .footerSocialMedia>li{
     display: inline;
     margin: 3%;
 }
 @media (min-width: 1440px) {
-    .statisticsSection > div {
-    width: 40px;
-}
-    .navbutton{
+    .logo{
+        margin-top:3%;
+    }
+
+    .headerSection{
+        margin: 0 auto;
+        width:90%;
+    }
+
+    .hideButton{
         display: none;
     }
     
+    .navbar-container {
+        padding: 0px 10px 0px 10px;
+        background-color: white;
+        color: hsl(257, 7%, 63%);
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .navbar-container a{
+        color: hsl(257, 7%, 63%);
+    }
+
+    .navbar1{
+        width: 40%;
+        float:left;
+        margin: -3% 0% 0% 5%;
+    }
+
+    .navbar2{
+        float:right;
+        width:60%;
+        margin: -3% -24% 0% 0%;
+    }
+
+    .navbar1, .navbar2 {
+        list-style: none;
+        text-align: center;
+    }
+
+    .navbar1 li, .navbar2 li{
+        color: hsl(257, 7%, 63%);
+        display: inline;
+        padding: 0% 5% 0% 5%;
+    }
+
+    hr{
+        display:none;
+    }
+
+    .signUpBtn{
+        padding: 2% 2%;
+        color: white;
+    }
+
     .hide{
         display: block;
     }
-
-    .section1Img {
-
+    /*
+    .section1 {
+        display: flex;
+        flex-direction: column;
     }
+    */
 
     .section1Info {
+        width: 45%;
+        height: auto;
+        float: left;
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .section1Img {
+        width: 45%;
+        height: auto;
+        float: right;
+    }
+    .shorterSection {
+        width: 90%;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .shorter {
+        width: 60%;
+        height: 30px;
+    }
+    .shortButton {
+        width: 30%;
+        height: 30px;
+    }
+    .shortButton:hover {
+        opacity: 0.6;
+    }
 
+    .section2 {
+        padding: 15% 5%;
+    }
+    .statisticsSection {
+        display: flex;
+        flex-direction: row;
+    }
+    .imgIco{
+        margin: 3%;
+        top: -40%;
+    }
+    .imgIco>img{
+        margin-left: 20px;
+    }
+    .statisticsSection > div {
+        margin: 1%;
+        text-align: left;
+        height: 230px;
+        padding: 3%;
+    }
+    .statisticsSection > hr{
+        display: none;
+    }
+    .boostMobile {
+        display: none;
+    }
+    .boostStarted {
+        padding: 2%;
+        top:0;
+    }
+    .footerSection{
+        display: flex;
+        text-align: left;
+        padding-bottom: 0%;
+    }
+    .footerSection>ul{
+        padding: 3%;
+        width: 15%;
+    }
+    .footerSection>img{
+        padding: 4%;
+        margin-top: 1%;
+        height: 40%;
     }
     
 }
