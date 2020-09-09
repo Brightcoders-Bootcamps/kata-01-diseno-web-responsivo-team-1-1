@@ -324,6 +324,9 @@ input:focus {
     .hide{
         display: block;
     }
+    .hide2 {
+        /*display: block;*/
+    }
     /*
     .section1 {
         display: flex;
@@ -352,12 +355,14 @@ input:focus {
         flex-direction: row;
     }
     .shorter {
-        width: 60%;
-        height: 30px;
+        width: 100%;
+        height: 50px;
+        padding: 5px 5px 5px 5px;
     }
     .shortButton {
-        width: 30%;
-        height: 30px;
+        width: 20%;
+        height: 50px;
+        padding: 5px 5px 5px 5px;
     }
     .shortButton:hover {
         opacity: 0.6;
