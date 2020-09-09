@@ -1,4 +1,3 @@
-
 :root {
     --cyan: hsl(180, 66%, 49%);
     --darkViolet: hsl(257, 27%, 26%);
@@ -12,15 +11,7 @@ body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
-/*
-.headerSection {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}*/
 .navbar-container {
-    /*display: flex;
-    flex-direction: row;*/
     margin: 0 auto;
     padding: 10px 0px 10px 0px;
     background-color: hsl(257, 27%, 26%);
@@ -53,13 +44,7 @@ body {
     -webkit-border-radius: 67px 67px 67px 67px;
     border: 0px solid #000000;
 }
-/*.signUpBtn:hover {
-    opacity: 0.6;
-}*/
-
 .navbar1, .navbar2 {
-    /*display: flex;
-    flex-direction: column;*/
     list-style: none;
     text-align: center;
 }
@@ -78,8 +63,6 @@ hr{
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding-bottom: 10%;
-    /*display: flex;
-    flex-direction: row;*/
 }
 .logoWhite {
     filter: invert(100%);
@@ -87,8 +70,6 @@ hr{
 .footerSection ul {
     list-style: none;
     padding: 0;
-    /*display: flex;
-    flex-direction: column;*/
 }
 .footerSection li {
    margin: 2% 0;
@@ -133,7 +114,6 @@ hr{
 }
 .statisticsSection>div{
     background-color: hsl(0, 0%, 100%);
-    /*margin: 25% 7%;*/
     margin: 0% 7% 0% 7%; 
     text-align:center;
     padding: 5%;
@@ -222,6 +202,7 @@ input:focus {
     font-size:10px;
     text-align:left;
     margin-left:10%;
+    width: auto;
 }
 
 .hide2{
@@ -240,10 +221,10 @@ input:focus {
     border: 0px solid #ffffff;
 }
 
-/*input.shorter:required{
-    outline-color: hsl(0, 87%, 67%);
+input.shorter:required{
+    border: 3px solid hsl(0, 87%, 67%);
     color: hsl(0, 87%, 67%);
-}*/
+}
 
 .shortButton {
     background-color: hsl(180, 66%, 49%);
@@ -263,10 +244,14 @@ input:focus {
     display: inline;
     margin: 3%;
 }
+.boostDesktop{
+    display: none;
+}
 @media (min-width: 1440px) {
     .logo{
         margin-top:3%;
     }
+<<<<<<< HEAD
 
     .headerSection{
         margin: 0 auto;
@@ -301,6 +286,46 @@ input:focus {
         margin: -3% -24% 0% 0%;
     }
 
+=======
+
+    .headerSection{
+        margin: 0 auto;
+        width:90%;
+    }
+
+    .hideButton{
+        display: none;
+    }
+    
+    .navbar-container {
+        padding: 0px 10px 0px 10px;
+        background-color: white;
+        color: hsl(257, 7%, 63%);
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .navbar-container a{
+        color: hsl(257, 7%, 63%);
+    }
+
+    .navbar1{
+        width: 40%;
+        float:left;
+        margin: -3% 0% 0% 5%;
+    }
+
+    .navbar2{
+        float:right;
+        width:15%;
+        margin: -3% 0% 0% 14%;
+    }
+
+    .navbar2 li:last-child{
+        margin-left:-5%;
+    }
+
+>>>>>>> 5efbd88... desktop design modifications and api function
     .navbar1, .navbar2 {
         list-style: none;
         text-align: center;
@@ -311,6 +336,7 @@ input:focus {
         display: inline;
         padding: 0% 5% 0% 5%;
     }
+<<<<<<< HEAD
 
     hr{
         display:none;
@@ -318,12 +344,17 @@ input:focus {
 
     .signUpBtn{
         padding: 2% 2%;
+=======
+    .navbar2 .signUpBtn{
+        padding: 2% 4%;
+>>>>>>> 5efbd88... desktop design modifications and api function
         color: white;
     }
 
     .hide{
         display: block;
     }
+<<<<<<< HEAD
     .hide2 {
         /*display: block;*/
     }
@@ -333,6 +364,8 @@ input:focus {
         flex-direction: column;
     }
     */
+=======
+>>>>>>> 5efbd88... desktop design modifications and api function
 
     .section1Info {
         width: 45%;
@@ -351,6 +384,7 @@ input:focus {
         width: 90%;
         position: relative;
         height: auto;
+<<<<<<< HEAD
         display: flex;
         flex-direction: row;
     }
@@ -362,18 +396,60 @@ input:focus {
     .shortButton {
         width: 20%;
         height: 50px;
+=======
+        display:inline-block;
+    }
+    .shorter {
+        width: 72%;
+        height: 50px;
+        margin: 5% 1% 0% 5%;
+        padding: 5px 5px 5px 5px;
+    }
+    .shortButton {
+        width: 15%;
+        height: 65px;
+        margin: 5% 5% 0% 0%;
+>>>>>>> 5efbd88... desktop design modifications and api function
         padding: 5px 5px 5px 5px;
     }
     .shortButton:hover {
         opacity: 0.6;
     }
+<<<<<<< HEAD
 
     .section2 {
         padding: 15% 5%;
+=======
+    .signUpBtn:hover {
+        opacity: 0.6;
+    }
+    .start:hover {
+        opacity: 0.6;
+    }
+    .link_please{
+        float: left;
+    }
+    .hide2 {
+        display: inline-block;
+        margin: 1% 0% 2% 5%;
+    }
+
+    .section2 {
+        padding: 15% 5%;
+        margin: 0;
+    }
+    .section2 > p {
+        width: 50%;
+        margin: auto;
+>>>>>>> 5efbd88... desktop design modifications and api function
     }
     .statisticsSection {
         display: flex;
         flex-direction: row;
+<<<<<<< HEAD
+=======
+        margin-top: 10%;
+>>>>>>> 5efbd88... desktop design modifications and api function
     }
     .imgIco{
         margin: 3%;
@@ -382,6 +458,7 @@ input:focus {
     .imgIco>img{
         margin-left: 20px;
     }
+<<<<<<< HEAD
     .statisticsSection > div {
         margin: 1%;
         text-align: left;
@@ -390,13 +467,51 @@ input:focus {
     }
     .statisticsSection > hr{
         display: none;
+=======
+    .statisticsSection > div{
+        margin: 0;
+        text-align: left;
+        height: 230px;
+        padding: 3%;
+        position: relative;
+    }
+    .vr{
+        width: 150px;
+        height:10px;
+        padding: 0;
+        margin: 160px 0 0 0;
+    }
+    .detailedRecords {
+        top: 50px;
+    }
+    .fullyCuztomizable {
+        top: 100px;
+    }
+    .section3 {
+        height: 245px;
+>>>>>>> 5efbd88... desktop design modifications and api function
     }
     .boostMobile {
         display: none;
     }
     .boostStarted {
         padding: 2%;
+<<<<<<< HEAD
         top:0;
+=======
+        top: -255px;
+    }
+    .boostDesktop{
+        display: block;
+    }
+    .boostDesktop>img{
+        width: 99%;
+    }
+    .start {
+        height: auto;
+        width: auto;
+        padding: 1% 3%;
+>>>>>>> 5efbd88... desktop design modifications and api function
     }
     .footerSection{
         display: flex;
@@ -413,4 +528,8 @@ input:focus {
         height: 40%;
     }
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5efbd88... desktop design modifications and api function
