@@ -32,32 +32,33 @@ function addlink(){
         document.getElementsByClassName("shorter")[0].style.color = 'hsl(0, 3%, 69%)';
         document.getElementsByClassName("shorter")[0].style.border = '0px solid #ffffff';
         //const prueba = document.getElementByClassName("shorter")[0].value;
+
+        var long_url = document.getElementsByClassName("shorter")[0].value; //se toma el link ingresado en el texto
+
+        $.post( //mandamos el link
+            "https://rel.ink/api/links/", 
+            {
+                url: long_url
+            },function(){
+                
+            }
+        );
+    
+        $.get( //recibimos el link acortado
+            "https://rel.ink/api/links/Nn8y9p/", 
+            { 
+                hashid:"Nn8y9p",
+                url: long_url,
+                created_at:"2019-06-18T21:29:57.922801Z"
+            },
+            function(response)
+            {
+                alert('Shortened link is: ' + response.data.url);
+            }
+        );
     }
     //esto es sólo para probar
 
-    var long_url = document.getElementsByClassName("shorter")[0].value; //se toma el link ingresado en el textbox
-
-    $.postJSON( //mandamos el link
-        "https://rel.ink/api/links/", 
-        {
-            url: longurl
-        },function(){
-
-        }
-    );
-
-    $.getJSON( //recibimos el link acortado
-        "https://rel.ink/api/links/Nn8y9p/", 
-        { 
-            hashid:"Nn8y9p",
-            url: long_url,
-            created_at:"2019-06-18T21:29:57.922801Z"
-        },
-        function(response)
-        {
-            alert('Shortened link is: ' + response.data.url);
-        }
-    );
 
     /*var objeto = {
         nombre: 'API',
