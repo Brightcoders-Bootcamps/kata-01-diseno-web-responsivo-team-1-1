@@ -6,15 +6,10 @@ function deploying(){
     menu[0].classList.toggle("hide");
 }
 
-
-/*function boxText(){
-    if(addlink==false){
-        console.log("funciona?");
-    }
-}*/
-
 //Botón para acortar links
-function addlink(){
+
+
+function addlink(long_url, short_url){
     var texto = $('.shorter').val();
     
 
@@ -26,51 +21,37 @@ function addlink(){
         document.getElementsByClassName("shorter")[0].style.border = '3px solid hsl(0, 87%, 67%)';
 
 
-        return false;
+        //return false;
     } else{
         document.getElementsByClassName("hide2")[0].style.display = 'none';
         document.getElementsByClassName("shorter")[0].style.color = 'hsl(0, 3%, 69%)';
         document.getElementsByClassName("shorter")[0].style.border = '0px solid #ffffff';
         //const prueba = document.getElementByClassName("shorter")[0].value;
 
-        var long_url = document.getElementsByClassName("shorter")[0].value; //se toma el link ingresado en el texto
-
-        $.post( //mandamos el link
-            "https://rel.ink/api/links/", 
-            {
-                url: long_url
-            },function(){
-                
+        long_url = document.getElementsByClassName("shorter")[0].value; //se toma el link ingresado en el texto
+         //debugger
+        fetch('https://rel.ink/api/links/', {
+                method: 'POST',
+                body: JSON.stringify({ //convierte el valor en una cadena de texto
+                url: long_url          //mandamos el url original
+            }),
+            headers: {
+                "Content-type": "application/json" //indica que tipo de contenido será retornado
             }
-        );
-    
-        $.get( //recibimos el link acortado
-            "https://rel.ink/api/links/Nn8y9p/", 
-            { 
-                hashid:"Nn8y9p",
-                url: long_url,
-                created_at:"2019-06-18T21:29:57.922801Z"
-            },
-            function(response)
-            {
-                alert('Shortened link is: ' + response.data.url);
+        })
+        .then(response => {
+            //debugger
+            if(response.status<400) {
+              return response.json();
             }
-        );
+        }) 
+        .then(response => {
+            debugger
+            //alert(response.hashid);
+            short_url = response.hashid;
+            return response.hashid;
+        })
+
     }
-    //esto es sólo para probar
-
-
-    /*var objeto = {
-        nombre: 'API',
-        num: 12,
-        estado: true,
-        subojeto: {
-            subnombre: 'a',
-            num: 19,
-            estado: false
-        }
-    }
-
-    console.log(objeto.subojeto);*/
 
 }

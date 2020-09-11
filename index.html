@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel=stylesheet type="text/css" href="main.css">
@@ -10,11 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="scriptmain.js" language="javascript" type="text/javascript"></script>
 
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <!--In case the user's browser doesn't support JavaScript-->
+
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    
-  </head>
+
+</head>
   <body>
       <section class="headerSection">
           <button class="navButton hideButton" onclick="deploying()">☰</button><!--Para la versión móvil-->
@@ -41,18 +44,19 @@
           <div class="section1Info">
               <h1>More than just shorter links</h1>
               <p>
-                  Build your brand's recognition and get detailed insights
-                  on how your links are performing.
+                Build your brand's recognition and get detailed insights
+                on how your links are performing.
               </p>
               <button class="start">Get Started</button>
           </div>
           <section class="shorterSection">
-              <!--<div class="boostMobile"><img src="images/bg-shorten-mobile.svg"></div>-->
-              <form id="formShorter" action="scriptmain.js" method="post">
-                  <input class="shorter" type="text" placeholder="Shorter a link here..." required>
-                  <button class="shortButton" onclick="addlink()" type="submit">Shorten It!</button>
-                  <p class="link_please hide2">Please add a link</p>
-              </form>
+            <div class="shortenMobile"><img src="images/bg-shorten-mobile.svg"></div>
+            <div class="shortenDesktop"><img src="images/bg-shorten-desktop.svg"></div>
+            <div class="shortenInputAndBtn">
+            <input class="shorter" type="text" placeholder="Shorter a link here..." required>
+              <button class="shortButton" onclick="addlink()" type="submit">Shorten It!</button>
+              <p class="link_please hide2">Please add a link</p>
+            </div>  
           </section>
       </section>
       <section class="section2">

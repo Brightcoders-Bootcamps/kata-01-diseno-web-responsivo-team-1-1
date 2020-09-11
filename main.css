@@ -19,13 +19,13 @@ body {
     border-radius: 10px;
     width: 90%;
 }
-.navbar-container a{
+.navbar-container a {
     color: white;
     text-decoration: none;
     position: relative;
     left: -15px;
 }
-.navButton{
+.navButton {
     background-color: #FFF;
     border: 0px;
     font-weight: bold;
@@ -33,7 +33,7 @@ body {
     color: gray;
     float: right;
 }
-.signUpBtn{
+.signUpBtn {
     background-color: hsl(180, 66%, 49%);
     color: hsl(0, 0%, 100%);
     padding: 4% 35%;
@@ -48,14 +48,14 @@ body {
     list-style: none;
     text-align: center;
 }
-.navbar1 li, .navbar2 li{
+.navbar1 li, .navbar2 li {
     padding: 10px 0px 10px 0px;
 }
-.linea_menu{
+.linea_menu {
     background-color:white;
     width:80%;
 }
-.hide{
+.hide {
     display: none;
 }
 .footerSection {
@@ -63,6 +63,9 @@ body {
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding-bottom: 10%;
+    position: relative;
+    z-index: -1;
+    top: -130px;
 }
 .logoWhite {
     filter: invert(100%);
@@ -78,7 +81,7 @@ body {
     padding: 5% 0;
     font-weight: bold;
 }
-.footerSection a{
+.footerSection a {
     text-decoration: none;
     color: hsl(0, 0%, 75%);
 }
@@ -89,10 +92,10 @@ body {
     width: 100%;
     height: 100%;
 }
-.section1{
+.section1 {
     font-size: x-large;
 }
-.section1>p{
+.section1Info > p {
     font-size: large;
     margin: 0% 5% 10% 5%;
     color: hsl(0, 3%, 69%);
@@ -108,11 +111,13 @@ body {
     background-color: hsl(0, 3%, 93%);
     color: hsl(0, 3%, 69%);
     text-align: center;
-    padding: 25% 0;
+    padding: 45% 0 25% 0;
     margin: 0%;
-    margin-top: 100px;
+    position: relative;
+    z-index: -1;
+    top: -130px;
 }
-.statisticsSection>div{
+.statisticsSection>div {
     background-color: hsl(0, 0%, 100%);
     margin: 0% 7% 0% 7%; 
     text-align:center;
@@ -127,25 +132,26 @@ body {
     color:  hsl(0, 0%, 100%);
     margin: 0%;
     height: 287px;
+    position: relative;
+    z-index: -1;
+    top: -130px;
 }
 .boostStarted {
     position: relative;
     z-index: 1;
     top:-240px;
 }
-.boostMobile>img{
+.boostMobile>img {
     width: 100%;
 }
-.statisticsSection>div>h3{
+.statisticsSection>div>h3 {
     color:black;
     margin-top:-58px; 
 }
-
-.statisticsSection>div>p{
+.statisticsSection>div>p {
     margin-top: 20px;
 }
-
-.imgIco{
+.imgIco {
     margin: 0 auto;
     width: 80px;
     height: 80px;
@@ -155,11 +161,11 @@ body {
     top:-58px;
     margin-bottom:40px;
 }
-.imgIco img{
+.imgIco img {
     vertical-align: middle;
     margin-top:25%;
 }
-.vr{
+.vr {
     margin: 0 auto;
     background-color: hsl(180, 66%, 49%);
     border-left: 6px solid hsl(180, 66%, 49%);
@@ -178,7 +184,21 @@ body {
     -webkit-border-radius: 67px 67px 67px 67px;
     border: 0px solid #000000;
 }
-
+.shortenMobile > img {
+    width: 100%;
+    height: 100px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+}
+.shortenDesktop {
+    display: none;
+}
+.shortenInputAndBtn {
+    position: relative;
+    z-index: 1;
+    top: -100px;
+}
 .shorterSection {
     background-color: hsl(257, 27%, 26%);
     text-align: center;
@@ -186,27 +206,22 @@ body {
     border-radius: 7px 7px 7px 7px;
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border-radius: 7px 7px 7px 7px;
-    
-    position: absolute;
+    height: 180px;
 }
-
 input:focus {
     color: black;
-  }
-
-.link_please{
+}
+.link_please {
     color: hsl(0, 87%, 67%);
     font-size:10px;
     text-align:left;
     margin-left:10%;
     width: auto;
 }
-
-.hide2{
+.hide2 {
     display:none;
 }
-
-.shorter{
+.shorter {
     color: hsl(0, 3%, 69%);
     padding: 4% 10%;
     margin: 7% 7% 0% 7%;
@@ -217,16 +232,12 @@ input:focus {
     -webkit-border-radius: 7px 7px 7px 7px;
     border: 0px solid #ffffff;
 }
-
 /*
-    input.shorter:required{
+    input.shorter:required {
     border: 3px solid hsl(0, 87%, 67%);
     color: hsl(0, 87%, 67%);
     }
-
 */
-
-
 .shortButton {
     background-color: hsl(180, 66%, 49%);
     color: hsl(0, 0%, 100%);
@@ -241,27 +252,24 @@ input:focus {
     border: 0px solid #000000;
 }
 
-.footerSocialMedia>li{
+.footerSocialMedia>li {
     display: inline;
     margin: 3%;
 }
-.boostDesktop{
+.boostDesktop {
     display: none;
 }
 @media (min-width: 1440px) {
-    .logo{
+    .logo {
         margin-top:3%;
     }
-
-    .headerSection{
+    .headerSection {
         margin: 0 auto;
         width:90%;
     }
-
-    .hideButton{
+    .hideButton {
         display: none;
     }
-    
     .navbar-container {
         padding: 0px 10px 0px 10px;
         background-color: white;
@@ -269,54 +277,45 @@ input:focus {
         border-radius: 10px;
         width: 90%;
     }
-
-    .navbar-container a{
+    .navbar-container a {
         color: hsl(257, 7%, 63%);
     }
-
-    .navbar1{
+    .navbar1 {
         width: 40%;
         float:left;
         margin: -3% 0% 0% 5%;
     }
-
-    .navbar2{
+    .navbar2 {
         float:right;
         width:15%;
         margin: -3% 0% 0% 14%;
     }
-
-    .navbar2 li:last-child{
+    .navbar2 li:last-child {
         margin-left:-5%;
     }
-
     .navbar1, .navbar2 {
         list-style: none;
         text-align: center;
     }
 
-    .navbar1 li, .navbar2 li{
+    .navbar1 li, .navbar2 li {
         color: hsl(257, 7%, 63%);
         display: inline;
         padding: 0% 5% 0% 5%;
     }
-
-    .linea_menu{
+    .linea_menu {
         display:none;
     }
-
-    .signUpBtn{
+    .signUpBtn {
         padding: 2% 2%;
     }
-    .navbar2 .signUpBtn{
+    .navbar2 .signUpBtn {
         padding: 2% 4%;
         color: white;
     }
-
-    .hide{
+    .hide {
         display: block;
     }
-
     .section1Info {
         width: 45%;
         height: auto;
@@ -324,21 +323,54 @@ input:focus {
         padding: 10px 30px 10px 30px;
         margin-bottom: 20px;
         margin-top: 20px;
+        text-align: left;
     }
-    .section1{
+    .section1 {
         margin-bottom: 0;
+    }
+    .section1Info > h1 {
+        font-size: 80px;
+        text-align: left;
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+    .section1Info > p {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 25px;
+        margin: 0 0 5% 0;
+    }
+    .section1Info > button {
+        margin: 30px 30px 0 30px;
+        padding: 2% 4%;
     }
     .section1Img {
         width: 45%;
         height: auto;
         float: right;
     }
+    .shortenMobile {
+        display: none;
+    }
+    .shortenDesktop {
+        display: block;
+    }
+    .shortenDesktop > img{
+        width: 100%;
+        border-radius: 7px 7px 7px 7px;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border: 0px solid #ffffff;
+    }
+    .shortenInputAndBtn {
+        top: -200px;
+    }
     .shorterSection {
         width: 90%;
         position: relative;
-        height: auto;
+        height: 197px;
         display:inline-block;
-        margin: 5% 0 0 0;
+        margin: 4% 0 0 0;
     }
     .shorter {                                                           
         width: 72%;
@@ -361,17 +393,19 @@ input:focus {
     .start:hover {
         opacity: 0.6;
     }
-    .link_please{
+    .link_please {
         float: left;
     }
     .hide2 {
         display: inline-block;
         margin: 1% 0% 2% 5%;
     }
-
     .section2 {
         padding: 15% 5%;
         margin: 0;
+        position: relative;
+        z-index: -1;
+        top: -225px;
     }
     .section2 > p {
         width: 50%;
@@ -382,21 +416,21 @@ input:focus {
         flex-direction: row;
         margin-top: 10%;
     }
-    .imgIco{
+    .imgIco {
         margin: 3%;
         top: -40%;
     }
-    .imgIco>img{
+    .imgIco>img {
         margin-left: 20px;
     }
-    .statisticsSection > div{
+    .statisticsSection > div {
         margin: 0;
         text-align: left;
         height: 230px;
         padding: 3%;
         position: relative;
     }
-    .vr{
+    .vr {
         width: 150px;
         height:10px;
         padding: 0;
@@ -418,10 +452,10 @@ input:focus {
         padding: 2%;
         top: -255px;
     }
-    .boostDesktop{
+    .boostDesktop {
         display: block;
     }
-    .boostDesktop>img{
+    .boostDesktop>img {
         width: 99%;
     }
     .start {
@@ -429,19 +463,18 @@ input:focus {
         width: auto;
         padding: 1% 3%;
     }
-    .footerSection{
+    .footerSection {
         display: flex;
         text-align: left;
         padding-bottom: 0%;
     }
-    .footerSection>ul{
+    .footerSection>ul {
         padding: 3%;
         width: 15%;
     }
-    .footerSection>img{
+    .footerSection>img {
         padding: 4%;
         margin-top: 1%;
         height: 40%;
     }
-    
 }
