@@ -208,6 +208,65 @@ body {
     -webkit-border-radius: 7px 7px 7px 7px;
     height: 180px;
 }
+
+.hide_shorted{
+    display: none;
+}
+
+.url_shorted{
+    position: relative;
+    top: 150%;
+    background-color:white;
+    border-radius: 7px;
+    margin: 5%;
+}
+
+.url_shorted ul{
+    width:100%;
+    margin-bottom: 0%;
+    list-style: none;
+    text-align: center;
+    display:inline-block;
+    padding-left: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.url_shorted .longUrl{
+    color: hsl(257, 27%, 26%);
+    padding-right:5px;
+}
+
+.hr_shorter{
+    border-top: 1px solid hsl(0, 0%, 75%);
+    border-bottom: -10%;
+    width: 100%;
+    height: 1px;
+}
+
+.url_shorted .shortUrl{
+    color: hsl(180, 66%, 49%);
+}
+
+.copyButton{
+    background-color: hsl(180, 66%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 2% 10%;
+    margin: 5%;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #000000;
+}
+
+.copyButton:hover{
+    opacity: 0.6;
+}
+
 input:focus {
     color: black;
 }
@@ -396,10 +455,16 @@ input:focus {
     .link_please {
         float: left;
     }
+
     .hide2 {
         display: inline-block;
         margin: 1% 0% 2% 5%;
     }
+
+    .url_shorted .longUrl:hover{
+        cursor: pointer;
+    } 
+
     .section2 {
         padding: 15% 5%;
         margin: 0;
