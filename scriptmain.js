@@ -1,3 +1,4 @@
+var shortCount = -1;
 //ocultar/mostrar menú en la versión móvil
 function deploying(){
     var menu = document.getElementsByClassName("navbar-container");
@@ -9,10 +10,7 @@ function deploying(){
 //Botón para acortar links
 
 function addlink(long_url, short_url){
-    var texto = $('.shorter').val();
-    var shortCount = 0;
-
-    
+    var texto = $('.shorter').val();   
 
     if(texto === ''){ //validar que en la caja de texto se haya escrito un link
         console.log("campo vacío");
@@ -24,8 +22,8 @@ function addlink(long_url, short_url){
 
         //return false;
     } else{
-        shortCount +=1;
-        var totalShort = [shortCount];
+        //shortCount +=1;
+        //var totalShort = [shortCount];
 
         document.getElementsByClassName("hide2")[0].style.display = 'none';
         document.getElementsByClassName("shorter")[0].style.color = 'hsl(0, 3%, 69%)';
@@ -59,16 +57,14 @@ function addlink(long_url, short_url){
             document.getElementsByClassName("shortUrl")[0].innerHTML = `https://rel.ink/${short_url}`;
         });
 
-        for(var i=0; i<shortCount; i++){
-            var shortBox = document.getElementsByClassName("url_shorted");
-            shortBox[i].classList.toggle("hide_shorted");
-            //totalShort[i] = shortBox[i]; 
-            const newLocal = 'url_shorted';
-            var original = document.getElementsByClassName(newLocal)[0]; 
-            var clone = original.cloneNode(true); // "deep" clone 
-            clone.id = "duplicater" + ++i; // there can only be one element with an ID 
-            original.parentNode.appendChild(clone);
-        }
+        document.getElementsByClassName("hide_shorted")[0].style.display='block';
+        var original = document.getElementsByClassName('url_shorted')[0]; 
+        var clone = original.cloneNode(true); // "deep" clone 
+        clone.id = "short_url-" + ++shortCount; // there can only be one element with an ID 
+        original.parentNode.appendChild(clone);
+        
+        if(shortCount==0){original.parentNode.removeChild(clone);}//eliminar el clon que no tiene las urls
+        
 
     }
 }
@@ -76,11 +72,14 @@ function addlink(long_url, short_url){
 function copyLink(){
     var copyUrl = document.getElementsByClassName('shortUrl')[0];
     var selection = document.createRange();
-    debugger
+    //debugger
     selection.selectNodeContents(copyUrl);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(selection);
     var res = document.execCommand('copy');
     console.log(res);
     window.getSelection().removeRange(selection);
+
+    document.getElementsByClassName('copyButton')[0].style.backgroundColor = 'hsl(257, 27%, 26%)';
+    document.getElementsByClassName('copyButton')[0].innerHTML = 'Copied!';
 }
